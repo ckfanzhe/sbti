@@ -787,291 +787,291 @@
   
   <script>
     const dimensionMeta = {
-      S1: { name: 'S1 自尊自信', model: '自我模型' },
-      S2: { name: 'S2 自我清晰度', model: '自我模型' },
-      S3: { name: 'S3 核心价值', model: '自我模型' },
-      E1: { name: 'E1 依恋安全感', model: '情感模型' },
-      E2: { name: 'E2 情感投入度', model: '情感模型' },
-      E3: { name: 'E3 边界与依赖', model: '情感模型' },
-      A1: { name: 'A1 世界观倾向', model: '态度模型' },
-      A2: { name: 'A2 规则与灵活度', model: '态度模型' },
-      A3: { name: 'A3 人生意义感', model: '态度模型' },
-      Ac1: { name: 'Ac1 动机导向', model: '行动驱力模型' },
-      Ac2: { name: 'Ac2 决策风格', model: '行动驱力模型' },
-      Ac3: { name: 'Ac3 执行模式', model: '行动驱力模型' },
-      So1: { name: 'So1 社交主动性', model: '社交模型' },
-      So2: { name: 'So2 人际边界感', model: '社交模型' },
-      So3: { name: 'So3 表达与真实度', model: '社交模型' }
+      S1: { name: { zh: 'S1 自尊自信', en: 'S1 Self-Esteem' }, model: { zh: '自我模型', en: 'Self Model' } },
+      S2: { name: { zh: 'S2 自我清晰度', en: 'S2 Self-Clarity' }, model: { zh: '自我模型', en: 'Self Model' } },
+      S3: { name: { zh: 'S3 核心价值', en: 'S3 Core Values' }, model: { zh: '自我模型', en: 'Self Model' } },
+      E1: { name: { zh: 'E1 依恋安全感', en: 'E1 Attachment Security' }, model: { zh: '情感模型', en: 'Emotional Model' } },
+      E2: { name: { zh: 'E2 情感投入度', en: 'E2 Emotional Investment' }, model: { zh: '情感模型', en: 'Emotional Model' } },
+      E3: { name: { zh: 'E3 边界与依赖', en: 'E3 Boundaries & Dependence' }, model: { zh: '情感模型', en: 'Emotional Model' } },
+      A1: { name: { zh: 'A1 世界观倾向', en: 'A1 Worldview Tendency' }, model: { zh: '态度模型', en: 'Attitude Model' } },
+      A2: { name: { zh: 'A2 规则与灵活度', en: 'A2 Rules & Flexibility' }, model: { zh: '态度模型', en: 'Attitude Model' } },
+      A3: { name: { zh: 'A3 人生意义感', en: 'A3 Life Meaning' }, model: { zh: '态度模型', en: 'Attitude Model' } },
+      Ac1: { name: { zh: 'Ac1 动机导向', en: 'Ac1 Motivation Drive' }, model: { zh: '行动驱力模型', en: 'Action Model' } },
+      Ac2: { name: { zh: 'Ac2 决策风格', en: 'Ac2 Decision Style' }, model: { zh: '行动驱力模型', en: 'Action Model' } },
+      Ac3: { name: { zh: 'Ac3 执行模式', en: 'Ac3 Execution Mode' }, model: { zh: '行动驱力模型', en: 'Action Model' } },
+      So1: { name: { zh: 'So1 社交主动性', en: 'So1 Social Initiative' }, model: { zh: '社交模型', en: 'Social Model' } },
+      So2: { name: { zh: 'So2 人际边界感', en: 'So2 Interpersonal Boundaries' }, model: { zh: '社交模型', en: 'Social Model' } },
+      So3: { name: { zh: 'So3 表达与真实度', en: 'So3 Expression & Authenticity' }, model: { zh: '社交模型', en: 'Social Model' } }
     };
     const questions = [
       {
         id: 'q1', dim: 'S1',
-        text: '我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片',
+        text: { zh: '我不仅是屌丝，我还是joker,我还是咸鱼，这辈子没谈过一场恋爱，胆怯又自卑，我的青春就是一场又一场的意淫，每一天幻想着我也能有一个女孩子和我一起压马路，一起逛街，一起玩，现实却是爆了父母金币，读了个烂学校，混日子之后找班上，没有理想，没有目标，没有能力的三无人员，每次看到你能在网上开屌丝的玩笑，我都想哭，我就是地底下的老鼠，透过下水井的缝隙，窥探地上的各种美好，每一次看到这种都是对我心灵的一次伤害，对我生存空间的一次压缩，求求哥们给我们这种小丑一点活路吧，我真的不想在白天把枕巾哭湿一大片', en: 'I\'m not just a loser, I\'m also a joker and a dried fish. Never had a relationship in my life, timid and self-loathing. My youth is one fantasy after another — walking down the street with a girl, going shopping, having fun together. In reality: parents\' money spent on a trash school, drifting through life, no ideals, no goals, no skills. Every time you joke about losers online, I wanna cry. I\'m like a mouse looking up at the beautiful world through a sewer grate. Please, give us clowns a break. I really don\'t wanna soak my pillowcase with tears.' },
         options: [
-          { label: '我哭了。。', value: 1 },
-          { label: '这是什么。。', value: 2 },
-          { label: '这不是我！', value: 3 }
+          { label: { zh: '我哭了。。', en: 'I cried..' }, value: 1 },
+          { label: { zh: '这是什么。。', en: 'What is this..' }, value: 2 },
+          { label: { zh: '这不是我！', en: 'This isn\'t me!' }, value: 3 }
         ]
       },
       {
         id: 'q2', dim: 'S1',
-        text: '我不够好，周围的人都比我优秀',
+        text: { zh: '我不够好，周围的人都比我优秀', en: 'I\'m not good enough. Everyone around me is better than me.' },
         options: [
-          { label: '确实', value: 1 },
-          { label: '有时', value: 2 },
-          { label: '不是', value: 3 }
+          { label: { zh: '确实', en: 'True' }, value: 1 },
+          { label: { zh: '有时', en: 'Sometimes' }, value: 2 },
+          { label: { zh: '不是', en: 'Not true' }, value: 3 }
         ]
       },
       {
         id: 'q3', dim: 'S2',
-        text: '我很清楚真正的自己是什么样的',
+        text: { zh: '我很清楚真正的自己是什么样的', en: 'I know clearly what my true self is like.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q4', dim: 'S2',
-        text: '我内心有真正追求的东西',
+        text: { zh: '我内心有真正追求的东西', en: 'I have something I truly pursue in my heart.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q5', dim: 'S3',
-        text: '我一定要不断往上爬、变得更厉害',
+        text: { zh: '我一定要不断往上爬、变得更厉害', en: 'I must keep climbing and becoming stronger.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q6', dim: 'S3',
-        text: '外人的评价对我来说无所吊谓。',
+        text: { zh: '外人的评价对我来说无所吊谓。', en: 'Other people\'s opinions mean nothing to me.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q7', dim: 'E1',
-        text: '对象超过5小时没回消息，说自己窜稀了，你会怎么想？',
+        text: { zh: '对象超过5小时没回消息，说自己窜稀了，你会怎么想？', en: 'Your partner hasn\'t replied for 5+ hours, claiming they have diarrhea. What do you think?' },
         options: [
-          { label: '拉稀不可能5小时，也许ta隐瞒了我。', value: 1 },
-          { label: '在信任和怀疑之间摇摆。', value: 2 },
-          { label: '也许今天ta真的不太舒服。', value: 3 }
+          { label: { zh: '拉稀不可能5小时，也许ta隐瞒了我。', en: 'Diarrhea can\'t last 5 hours. Maybe they\'re hiding something from me.' }, value: 1 },
+          { label: { zh: '在信任和怀疑之间摇摆。', en: 'Wavering between trust and suspicion.' }, value: 2 },
+          { label: { zh: '也许今天ta真的不太舒服。', en: 'Maybe they really aren\'t feeling well today.' }, value: 3 }
         ]
       },
       {
         id: 'q8', dim: 'E1',
-        text: '我在感情里经常担心被对方抛弃',
+        text: { zh: '我在感情里经常担心被对方抛弃', en: 'I often worry about being abandoned in relationships.' },
         options: [
-          { label: '是的', value: 1 },
-          { label: '偶尔', value: 2 },
-          { label: '不是', value: 3 }
+          { label: { zh: '是的', en: 'Yes' }, value: 1 },
+          { label: { zh: '偶尔', en: 'Sometimes' }, value: 2 },
+          { label: { zh: '不是', en: 'No' }, value: 3 }
         ]
       },
       {
         id: 'q9', dim: 'E2',
-        text: '我对天发誓，我对待每一份感情都是认真的！',
+        text: { zh: '我对天发誓，我对待每一份感情都是认真的！', en: 'I swear to god, I take every relationship seriously!' },
         options: [
-          { label: '并没有', value: 1 },
-          { label: '也许？', value: 2 },
-          { label: '是的！（问心无愧骄傲脸）', value: 3 }
+          { label: { zh: '并没有', en: 'Not really' }, value: 1 },
+          { label: { zh: '也许？', en: 'Maybe?' }, value: 2 },
+          { label: { zh: '是的！（问心无愧骄傲脸）', en: 'Yes! (proudly)' }, value: 3 }
         ]
       },
       {
         id: 'q10', dim: 'E2',
-        text: '你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？',
+        text: { zh: '你的恋爱对象是一个尊老爱幼，温柔敦厚，洁身自好，光明磊落，大义凛然，能言善辩，口才流利，观察入微，见多识广，博学多才，诲人不倦，和蔼可亲，平易近人，心地善良，慈眉善目，积极进取，意气风发，玉树临风，国色天香，倾国倾城，花容月貌的人，此时你会？', en: 'Your partner is kind, gentle, pure-hearted, noble, eloquent, insightful, knowledgeable, inspiring, warm, approachable, compassionate, progressive, and stunningly beautiful. What would you do?' },
         options: [
-          { label: '就算ta再优秀我也不会陷入太深。', value: 1 },
-          { label: '会介于A和C之间。', value: 2 },
-          { label: '会非常珍惜ta，也许会变成恋爱脑。', value: 3 }
+          { label: { zh: '就算ta再优秀我也不会陷入太深。', en: 'Even if they\'re outstanding, I won\'t fall too deep.' }, value: 1 },
+          { label: { zh: '会介于A和C之间。', en: 'Somewhere between A and C.' }, value: 2 },
+          { label: { zh: '会非常珍惜ta，也许会变成恋爱脑。', en: 'I\'d cherish them deeply, maybe become love-stupid.' }, value: 3 }
         ]
       },
       {
         id: 'q11', dim: 'E3',
-        text: '恋爱后，对象非常黏人，你作何感想？',
+        text: { zh: '恋爱后，对象非常黏人，你作何感想？', en: 'After dating, your partner is very clingy. How do you feel?' },
         options: [
-          { label: '那很爽了', value: 1 },
-          { label: '都行无所谓', value: 2 },
-          { label: '我更喜欢保留独立空间', value: 3 }
+          { label: { zh: '那很爽了', en: 'That\'s awesome' }, value: 1 },
+          { label: { zh: '都行无所谓', en: 'Whatever, doesn\'t matter to me' }, value: 2 },
+          { label: { zh: '我更喜欢保留独立空间', en: 'I prefer having my own space' }, value: 3 }
         ]
       },
       {
         id: 'q12', dim: 'E3',
-        text: '我在任何关系里都很重视个人空间',
+        text: { zh: '我在任何关系里都很重视个人空间', en: 'I value personal space in any relationship.' },
         options: [
-          { label: '我更喜欢依赖与被依赖', value: 1 },
-          { label: '看情况', value: 2 },
-          { label: '是的！（斩钉截铁地说道）', value: 3 }
+          { label: { zh: '我更喜欢依赖与被依赖', en: 'I prefer depending and being depended on' }, value: 1 },
+          { label: { zh: '看情况', en: 'Depends on the situation' }, value: 2 },
+          { label: { zh: '是的！（斩钉截铁地说道）', en: 'Yes! (said emphatically)' }, value: 3 }
         ]
       },
       {
         id: 'q13', dim: 'A1',
-        text: '大多数人是善良的',
+        text: { zh: '大多数人是善良的', en: 'Most people are kind.' },
         options: [
-          { label: '其实邪恶的人心比世界上的痔疮更多。', value: 1 },
-          { label: '也许吧。', value: 2 },
-          { label: '是的，我愿相信好人更多。', value: 3 }
+          { label: { zh: '其实邪恶的人心比世界上的痔疮更多。', en: 'Actually, evil hearts outnumber hemorrhoids worldwide.' }, value: 1 },
+          { label: { zh: '也许吧。', en: 'Maybe.' }, value: 2 },
+          { label: { zh: '是的，我愿相信好人更多。', en: 'Yes, I choose to believe there are more good people.' }, value: 3 }
         ]
       },
       {
         id: 'q14', dim: 'A1',
-        text: '你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？',
+        text: { zh: '你走在街上，一位萌萌的小女孩蹦蹦跳跳地朝你走来（正脸、侧脸看都萌，用vivo、苹果、华为、OPPO手机看都萌，实在是非常萌的那种），她递给你一根棒棒糖，此时你作何感想？', en: 'A cute little girl bounces toward you on the street and hands you a lollipop. What\'s your reaction?' },
         options: [
-          { label: '呜呜她真好真可爱！居然给我棒棒糖！', value: 3 },
-          { label: '一脸懵逼，作挠头状', value: 2 },
-          { label: '这也许是一种新型诈骗？还是走开为好。', value: 1 }
+          { label: { zh: '呜呜她真好真可爱！居然给我棒棒糖！', en: 'Aww she\'s so sweet and cute! Giving me a lollipop!' }, value: 3 },
+          { label: { zh: '一脸懵逼，作挠头状', en: 'Confused, scratching my head' }, value: 2 },
+          { label: { zh: '这也许是一种新型诈骗？还是走开为好。', en: 'This might be a new scam scheme? Better walk away.' }, value: 1 }
         ]
       },
       {
         id: 'q15', dim: 'A2',
-        text: '快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？',
+        text: { zh: '快考试了，学校规定必须上晚自习，请假会扣分，但今晚你约了女/男神一起玩《绝地求生：刺激战场》（一款刺激的游戏），你怎么办？', en: 'Finals are coming. School requires night study or you lose points. But tonight you have a date to play PUBG with your crush. What do you do?' },
         options: [
-          { label: '翘了！反正就一次！', value: 1 },
-          { label: '干脆请个假吧。', value: 2 },
-          { label: '都快考试了还去啥。', value: 3 }
+          { label: { zh: '翘了！反正就一次！', en: 'Skip it! It\'s only once!' }, value: 1 },
+          { label: { zh: '干脆请个假吧。', en: 'Just call in sick.' }, value: 2 },
+          { label: { zh: '都快考试了还去啥。', en: 'Exams are coming, definitely not going.' }, value: 3 }
         ]
       },
       {
         id: 'q16', dim: 'A2',
-        text: '我喜欢打破常规，不喜欢被束缚',
+        text: { zh: '我喜欢打破常规，不喜欢被束缚', en: 'I like breaking rules and hate being constrained.' },
         options: [
-          { label: '认同', value: 1 },
-          { label: '保持中立', value: 2 },
-          { label: '不认同', value: 3 }
+          { label: { zh: '认同', en: 'Agree' }, value: 1 },
+          { label: { zh: '保持中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '不认同', en: 'Disagree' }, value: 3 }
         ]
       },
       {
         id: 'q17', dim: 'A3',
-        text: '我做事通常有目标。',
+        text: { zh: '我做事通常有目标。', en: 'I usually have goals when I do things.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q18', dim: 'A3',
-        text: '突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。',
+        text: { zh: '突然某一天，我意识到人生哪有什么他妈的狗屁意义，人不过是和动物一样被各种欲望支配着，纯纯是被激素控制的东西，饿了就吃，困了就睡，一发情就想交配，我们简直和猪狗一样没什么区别。', en: 'Suddenly I realized life has no goddamn meaning. We\'re just animals controlled by desires — eat when hungry, sleep when tired, mate when horney. We\'re no different from pigs and dogs.' },
         options: [
-          { label: '是这样的。', value: 1 },
-          { label: '也许是，也许不是。', value: 2 },
-          { label: '这简直是胡扯', value: 3 }
+          { label: { zh: '是这样的。', en: 'Exactly.' }, value: 1 },
+          { label: { zh: '也许是，也许不是。', en: 'Maybe, maybe not.' }, value: 2 },
+          { label: { zh: '这简直是胡扯', en: 'That\'s nonsense.' }, value: 3 }
         ]
       },
       {
         id: 'q19', dim: 'Ac1',
-        text: '我做事主要为了取得成果和进步，而不是避免麻烦和风险。',
+        text: { zh: '我做事主要为了取得成果和进步，而不是避免麻烦和风险。', en: 'I do things mainly for results and progress, not to avoid trouble or risks.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q20', dim: 'Ac1',
-        text: '你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像',
+        text: { zh: '你因便秘坐在马桶上（已长达30分钟），拉不出很难受。此时你更像', en: 'You\'ve been sitting on the toilet for 30 minutes with constipation. Which best describes you?' },
         options: [
-          { label: '再坐三十分钟看看，说不定就有了。', value: 1 },
-          { label: '用力拍打自己的屁股并说：“死屁股，快拉啊！”', value: 2 },
-          { label: '使用开塞露，快点拉出来才好。', value: 3 }
+          { label: { zh: '再坐三十分钟看看，说不定就有了。', en: 'Sit for another 30 minutes, maybe it\'ll come.' }, value: 1 },
+          { label: { zh: '用力拍打自己的屁股并说：”死屁股，快拉啊！”', en: 'Slap your own butt and say “Come on, you dead butt!”' }, value: 2 },
+          { label: { zh: '使用开塞露，快点拉出来才好。', en: 'Use an enema to get it over with.' }, value: 3 }
         ]
       },
       {
         id: 'q21', dim: 'Ac2',
-        text: '我做决定比较果断，不喜欢犹豫',
+        text: { zh: '我做决定比较果断，不喜欢犹豫', en: 'I make decisions quickly and dislike hesitating.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       },
       {
         id: 'q22', dim: 'Ac2',
-        text: '此题没有题目，请盲选',
+        text: { zh: '此题没有题目，请盲选', en: 'This question has no question text. Pick blindly.' },
         options: [
-          { label: '反复思考后感觉应该选A？', value: 1 },
-          { label: '啊，要不选B？', value: 2 },
-          { label: '不会就选C？', value: 3 }
+          { label: { zh: '反复思考后感觉应该选A？', en: 'After thinking hard, feels like A?' }, value: 1 },
+          { label: { zh: '啊，要不选B？', en: 'Uh, how about B?' }, value: 2 },
+          { label: { zh: '不会就选C？', en: 'When in doubt, pick C?' }, value: 3 }
         ]
       },
       {
         id: 'q23', dim: 'Ac3',
-        text: '别人说你“执行力强”，你内心更接近哪句？',
+        text: { zh: '别人说你”执行力强”，你内心更接近哪句？', en: 'When people say you have “strong execution,” which resonates more?' },
         options: [
-          { label: '我被逼到最后确实执行力超强。。。', value: 1 },
-          { label: '啊，有时候吧。', value: 2 },
-          { label: '是的，事情本来就该被推进', value: 3 }
+          { label: { zh: '我被逼到最后确实执行力超强。。。', en: 'I do have strong execution when pushed to the limit..' }, value: 1 },
+          { label: { zh: '啊，有时候吧。', en: 'Uh, sometimes I guess.' }, value: 2 },
+          { label: { zh: '是的，事情本来就该被推进', en: 'Yes, things should be pushed forward.' }, value: 3 }
         ]
       },
       {
         id: 'q24', dim: 'Ac3',
-        text: '我做事常常有计划，____',
+        text: { zh: '我做事常常有计划，____', en: 'I often plan my tasks, ____' },
         options: [
-          { label: '然而计划不如变化快。', value: 1 },
-          { label: '有时能完成，有时不能。', value: 2 },
-          { label: '我讨厌被打破计划。', value: 3 }
+          { label: { zh: '然而计划不如变化快。', en: 'But plans can\'t keep up with changes.' }, value: 1 },
+          { label: { zh: '有时能完成，有时不能。', en: 'Sometimes I complete them, sometimes not.' }, value: 2 },
+          { label: { zh: '我讨厌被打破计划。', en: 'I hate having my plans disrupted.' }, value: 3 }
         ]
       },
       {
         id: 'q25', dim: 'So1',
-        text: '你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？',
+        text: { zh: '你因玩《第五人格》（一款刺激的游戏）而结识许多网友，并被邀请线下见面，你的想法是？', en: 'You met many online friends through Identity V and got invited to meet IRL. Your thoughts?' },
         options: [
-          { label: '网上口嗨下就算了，真见面还是有点忐忑。', value: 1 },
-          { label: '见网友也挺好，反正谁来聊我就聊两句。', value: 2 },
-          { label: '我会打扮一番并热情聊天，万一呢，我是说万一呢？', value: 3 }
+          { label: { zh: '网上口嗨下就算了，真见面还是有点忐忑。', en: 'It\'s fun online, but meeting irl makes me nervous.' }, value: 1 },
+          { label: { zh: '见网友也挺好，反正谁来聊我就聊两句。', en: 'Meeting online friends is fine, I\'ll just chat with whoever shows up.' }, value: 2 },
+          { label: { zh: '我会打扮一番并热情聊天，万一呢，我是说万一呢？', en: 'I\'ll dress up and chat enthusiastically. What if? Just saying, what if?' }, value: 3 }
         ]
       },
       {
         id: 'q26', dim: 'So1',
-        text: '朋友带了ta的朋友一起来玩，你最可能的状态是',
+        text: { zh: '朋友带了ta的朋友一起来玩，你最可能的状态是', en: 'Your friend brought their friend to hang out. Your most likely state is:' },
         options: [
-          { label: '对“朋友的朋友”天然有点距离感，怕影响二人关系', value: 1 },
-          { label: '看对方，能玩就玩。', value: 2 },
-          { label: '朋友的朋友应该也算我的朋友！要热情聊天', value: 3 }
+          { label: { zh: '对”朋友的朋友”天然有点距离感，怕影响二人关系', en: 'I naturally keep distance with “friends of friends,” afraid it\'ll affect our relationship.' }, value: 1 },
+          { label: { zh: '看对方，能玩就玩。', en: 'Depends on them. If we click, we click.' }, value: 2 },
+          { label: { zh: '朋友的朋友应该也算我的朋友！要热情聊天', en: 'Friends of friends should be my friends too! Let\'s chat enthusiastically.' }, value: 3 }
         ]
       },
       {
         id: 'q27', dim: 'So2',
-        text: '我和人相处主打一个电子围栏，靠太近会自动报警。',
+        text: { zh: '我和人相处主打一个电子围栏，靠太近会自动报警。', en: 'I maintain an invisible electric fence in relationships. Get too close and alarms go off.' },
         options: [
-          { label: '认同', value: 3 },
-          { label: '中立', value: 2 },
-          { label: '不认同', value: 1 }
+          { label: { zh: '认同', en: 'Agree' }, value: 3 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 }
         ]
       },
       {
         id: 'q28', dim: 'So2',
-        text: '我渴望和我信任的人关系密切，熟得像失散多年的亲戚。',
+        text: { zh: '我渴望和我信任的人关系密切，熟得像失散多年的亲戚。', en: 'I crave close relationships with people I trust, like long-lost relatives.' },
         options: [
-          { label: '认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '不认同', value: 3 }
+          { label: { zh: '认同', en: 'Agree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '不认同', en: 'Disagree' }, value: 3 }
         ]
       },
       {
         id: 'q29', dim: 'So3',
-        text: '有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：',
+        text: { zh: '有时候你明明对一件事有不同的、负面的看法，但最后没说出来。多数情况下原因是：', en: 'Sometimes you have a different or negative opinion but don\'t say it. Usually because:' },
         options: [
-          { label: '这种情况较少。', value: 1 },
-          { label: '可能碍于情面或者关系。', value: 2 },
-          { label: '不想让别人知道自己是个阴暗的人。', value: 3 }
+          { label: { zh: '这种情况较少。', en: 'This doesn\'t happen often.' }, value: 1 },
+          { label: { zh: '可能碍于情面或者关系。', en: 'Might hurt feelings or damage the relationship.' }, value: 2 },
+          { label: { zh: '不想让别人知道自己是个阴暗的人。', en: 'Don\'t want others to know I\'m a阴暗 person.' }, value: 3 }
         ]
       },
       {
         id: 'q30', dim: 'So3',
-        text: '我在不同人面前会表现出不一样的自己',
+        text: { zh: '我在不同人面前会表现出不一样的自己', en: 'I act differently around different people.' },
         options: [
-          { label: '不认同', value: 1 },
-          { label: '中立', value: 2 },
-          { label: '认同', value: 3 }
+          { label: { zh: '不认同', en: 'Disagree' }, value: 1 },
+          { label: { zh: '中立', en: 'Neutral' }, value: 2 },
+          { label: { zh: '认同', en: 'Agree' }, value: 3 }
         ]
       }
     ];
@@ -1080,22 +1080,22 @@
         id: 'drink_gate_q1',
         special: true,
         kind: 'drink_gate',
-        text: '您平时有什么爱好？',
+        text: { zh: '您平时有什么爱好？', en: 'What are your hobbies?' },
         options: [
-          { label: '吃喝拉撒', value: 1 },
-          { label: '艺术爱好', value: 2 },
-          { label: '饮酒', value: 3 },
-          { label: '健身', value: 4 }
+          { label: { zh: '吃喝拉撒', en: 'Eating & sleeping' }, value: 1 },
+          { label: { zh: '艺术爱好', en: 'Artistic pursuits' }, value: 2 },
+          { label: { zh: '饮酒', en: 'Drinking' }, value: 3 },
+          { label: { zh: '健身', en: 'Working out' }, value: 4 }
         ]
       },
       {
         id: 'drink_gate_q2',
         special: true,
         kind: 'drink_trigger',
-        text: '您对饮酒的态度是？',
+        text: { zh: '您对饮酒的态度是？', en: 'What\'s your attitude toward drinking?' },
         options: [
-          { label: '小酌怡情，喝不了太多。', value: 1 },
-          { label: '我习惯将白酒灌在保温杯，当白开水喝，酒精令我信服。', value: 2 }
+          { label: { zh: '小酌怡情，喝不了太多。', en: 'A drink or two is nice, can\'t handle more.' }, value: 1 },
+          { label: { zh: '我习惯将白酒灌在保温杯，当白开水喝，酒精令我信服。', en: 'I pour baijiu into my thermos and drink it like water. Alcohol commands my respect.' }, value: 2 }
         ]
       }
     ];
@@ -1511,7 +1511,16 @@
         questionPrefix: '第 ',
         questionSuffix: ' 题',
         specialQuestion: '补充题',
-        hiddenDim: '维度已隐藏'
+        hiddenDim: '维度已隐藏',
+        resultModeKickerDefault: '你的主类型',
+        resultModeKickerDrunk: '隐藏人格已激活',
+        resultModeKickerHHHH: '系统强制兜底',
+        matchBadgeDefault: '匹配度 ',
+        matchBadgeDrunk: '匹配度 100% · 酒精异常因子已接管',
+        matchBadgeHHHH: '标准人格库最高匹配仅 ',
+        subDefault: '维度命中度较高，当前结果可视为你的第一人格画像。',
+        subDrunk: '乙醇亲和性过强，系统已直接跳过常规人格审判。',
+        subHHHH: '标准人格库对你的脑回路集体罢工了，于是系统把你强制分配给了 HHHH。'
       },
       en: {
         heroTitle: 'MBTI is outdated. SBTI is here.',
@@ -1546,11 +1555,70 @@
         questionPrefix: 'Q',
         questionSuffix: '',
         specialQuestion: 'Bonus Q',
-        hiddenDim: 'Hidden'
+        hiddenDim: 'Hidden',
+        resultModeKickerDefault: 'Your Main Type',
+        resultModeKickerDrunk: 'Hidden Type Activated',
+        resultModeKickerHHHH: 'System Fallback',
+        matchBadgeDefault: 'Match: ',
+        matchBadgeDrunk: 'Match: 100% | Alcohol Anomaly Activated',
+        matchBadgeHHHH: 'Best Match: ',
+        subDefault: 'High dimension match — this can be viewed as your primary personality profile.',
+        subDrunk: 'Ethanol affinity too strong. System skipped normal personality judgment.',
+        subHHHH: 'Standard personality library collectively罢工ed on your brain circuits. System assigned you to HHHH.'
       }
     };
 
     let currentLang = 'en';
+
+    // English translations for TYPE_LIBRARY
+    const TYPE_LIBRARY_EN = {
+  "CTRL": { cn: "The Controller", intro: "What about it? Got totally figured out, right?", desc: "Congratulations! You've discovered the rarest personality in China. You're the natural rebel against entropy! 99.99% of so-called successful people are拙劣 imitators of you. CTRL is a walking task manager. What others call 'rules' are just your factory default settings. Having a CTRL friend means your life's GPS just got a major upgrade. They hit Ctrl+S on your runaway train and drag you back with undeniable logic. They're the last backup disk of your chaotic life, the only reboot button still glowing before the universe collapses." },
+  "ATM-er": { cn: "The Giver", intro: "You think I'm rich?", desc: "Congratulations! You've discovered one of the rarest personalities. You might become finance's greatest mystery — ATM-er doesn't necessarily 'give money' but might always be 'paying.' Paying time, paying energy, paying patience, paying for what should've been peaceful nights. Like an old but solid ATM: people's anxieties go in, and 'it's okay, I've got you' comes out. Your life is a grand, Applause-less solo payment show." },
+  "Dior-s": { cn: "The Loser", intro: "Wait for my comeback, Loser.", desc: "Congratulations! You're not really a loser — you're Diogenes' long-lost spiritual heir. Dior-s is the ultimate蔑视 of consumerism and success-story PUA. They haven't 'given up on ambition' — they've seen through that the end of all 'ambition' is just a fancier prison. Losers have big wisdom. When others chase trends getting battered by waves, Dior-s is already sunbathing in their spiritual barrel, achieving 'human-barrel unity.' Their creed: tested by billions of years of evolution — 1. Lying down is more comfortable than standing. 2. When it's meal time, you eat." },
+  "BOSS": { cn: "The Boss", intro: "Hand over the steering wheel. I'll drive.", desc: "BOSS is someone who always has their hands on the steering wheel. Even when the gas light's on and the GPS is nonsense, they'd say 'give me the wheel' with a deadpan face — and actually drive you to the destination. They have their own physics law: Eternal Upward. BOSS sees the world like a player who's beaten the game looking at tutorial mode. Efficiency is their faith, order is their breath. They don't 'have natural leadership aura' — they ARE the aura generator. Within 5 meters, air automatically becomes serious and efficient." },
+  "THAN-K": { cn: "The Grateful One", intro: "I thank the heavens! I thank the earth!", desc: "Congratulations! You have the rarest personality. You should thank me! Thank you for this moment of life's nourishment! Stuck in traffic? You should say: I thank this traffic jam for giving me more time to enjoy this wonderful song and appreciate every anxious face outside the window. Yes, THAN-K has a jade-like temperament and a heart that embraces all. In their world, there are no real villains — only 'friends not yet illuminated by gratitude.'" },
+  "OH-NO": { cn: "The Worrier", intro: "Oh no! Why is this my type?!", desc: "'Oh no!' isn't a fear scream — it's supreme wisdom. When normal people see a cup on the table edge, the Worrier sees a disaster epic: water stain → short circuit → fire → building evacuation → economic loss → butterfly effect → apocalypse. So with an 'Oh, no!' from the soul, they move the cup to the center at lightning speed. Worriers have almost obsessive respect for 'boundaries.' All accidents and risks are strangled in their bud by that 'Oh, no!' They are guardians of order, the last batch of tense, dignified people in this chaotic world." },
+  "GOGO": { cn: "The Go-Getter", intro: "gogogo~ Let's go!", desc: "Research shows GOGO's brain structure is fundamentally different from normal people. GOGO lives in a pure 'what you see is what you get' world. Creed: close eyes = dark; spend all money = no money; stand on crosswalk = pedestrian. Perfect logic闭环, impossible to refute. Others debate 'chicken or egg?' GOGO already turned both into 'Ultimate Meaning-of-Life Scrambled Rice.' They're not 'solving problems' — they're 'clearing to-do lists.' For them: only Done, and About to Be Done By Me." },
+  "SEXY": { cn: "The Seducer", intro: "You're a natural charmer!", desc: "When you walk into a room, the lighting system automatically recognizes you and dims itself to save energy. When you smile, you become a smiling charmer, air humidity drops significantly because water vapor condenses into love hearts in people's eyes. Everyone easily develops excessive attention toward you. Legend says: if enough SEXY types gather at a party, their combined charm energy can temporarily distort spacetime, making attendees feel 'time has slowed down.' They don't need to try hard — just existing is already like an overly ornate赋." },
+  "LOVE-R": { cn: "The Lover", intro: "Too much love. Reality feels a bit barren.", desc: "LOVE-R is like a rare species surviving from ancient mythological times. You're the last, most outdated bard of this steel forest. Your emotional processor isn't binary — it's rainbow. A falling leaf: normal people see 'autumn is coming,' LOVE-R sees a 13-act tragicomedy about reincarnation, sacrifice, and wordless love. Your inner world is an always-open theme park, lifetime spent searching for a soul who can read the map and ride the carousel with you until the end of the universe." },
+  "MUM": { cn: "The Caretaker", intro: "Maybe... can I call you Mom...?", desc: "Congratulations! You've got the rarest Caretaker personality. Yes, before chaos was sorted, before time had a name, before the first star burped — there was already Mom. The Caretaker's base color is gentleness, expert at sensing emotions, super empathetic, knows when to stop, when to tell themselves 'let it go.' Mom is like a doctor healing others' sadness. But when the Caretaker cries, the medicine they give themselves is always a smaller dose than for others. MUM's kindness to themselves often comes at a discount." },
+  "FAKE": { cn: "The Pretender", intro: "There are no more real humans left.", desc: "SCP Foundation Emergency Report: Project 'Pretender.' In social settings, Pretenders are smooth operators because they switch masks faster than switching phone input methods. One second: buddy mode. Next second (boss arrives): reliable employee mode. Think you found a friend who truly gets you? Wake up. You just met a well-disguised, high-performance android. Late at night, Pretenders peel off layer after layer of masks — only to find: the emptiness inside is precisely made up of those masks." },
+  "OJBK": { cn: "The Zen Master", intro: "When I say 'whatever,' I really mean it.", desc: "Let's face the raw essence of this word: OJBK. This isn't just a personality — it's a governing philosophy. When mortals face 'rice or noodles for lunch,' their brains burn calories in debate; OJBK types respond with imperial calm: 'Both are fine.' This isn't lacking opinions — it's saying: your petty mortal choices are all ants to me. Why argue? Debating the universe's future with paramecia is meaningless. Why take things seriously? Emperors don't care if dust drifts left or right." },
+  "MALO": { cn: "The Monkey", intro: "Life is a game and I'm just a monkey.", desc: "Friend, you're not 'young at heart' — you simply never evolved. Your soul stayed in that happy era swinging from trees, eyes lighting up at bananas. When human ancestors came down from trees, learned to walk upright, put on suits and ties — the Monkey ancestor watched from a nearby tree, scratched their butt, and let out a disdainful 'chatter.' They've seen through everything: 'civilization' is just the most boring, least fun paid game. Rules can be broken. Ceilings are for hanging upside down. Conference rooms are for doing backflips. MALO is literally a brainstorm that fell out of a giant brain hole and forgot to close the door." },
+  "JOKE-R": { cn: "The Jester", intro: "Turns out we're all clowns.", desc: "Note: JOKE-R isn't really a 'person' — more like a clown wearing jokes. You open one layer: it's a joke. Open another: it's a bit. Keep opening until... the core is empty, with only a faint echo: 'Surprise.' JOKE-R is the social atmosphere team leader and sole designated firepower output. With them around, the party never dies. Everyone laughs hysterically — and the happiest laugher is often them, using the biggest laugh to cover up the sound of their own broken heart." },
+  "WOC!": { cn: "The Shocked One", intro: "WTF, how did I get this type?", desc: "We've discovered an amazing species — the WOC! type. They have two completely independent operating systems: 'Surface System' handles 'WTF,' '牛逼,' 'Huh?' and similar exclamations; 'Backend System' handles cold analysis: 'Yep, as I expected.' WOC! people only say 'WTF' — they don't intervene because they know arguing with idiots is like helping mud climb a wall, wasting energy and getting屎 all over yourself. So they choose to grasp a blade of wise grass and offer the highest respect to this crazy world with a heartfelt 'WOC!'" },
+  "THIN-K": { cn: "The Thinker", intro: "100 seconds of deep thought completed.", desc: "Research shows THIN-K's brain structure is fundamentally different. As the name suggests, their brain is in constant thinking mode. They judge information carefully, focusing on arguments, evidence, logical reasoning, potential biases, even 'the author's complete three-generation ideological background report.' In this information explosion era, they never blindly follow. In relationships, they weigh pros and cons, and fiercely defend their personal space. Someone sees them alone staring blankly? Fool — that's their brain classifying, archiving, and disposing of all information received today." },
+  "SHIT": { cn: "The Cynic", intro: "This world is a piece of shit.", desc: "Congratulations! SHIT is the only rare personality known in the universe. Being a cynic isn't complaining — it's conducting a mysterious ritual. SHIT's behavior is an earth-shaking paradoxical drama. Mouth: 'This project is shit.' Hands: quietly opening Excel, building function models and Gantt charts. Mouth: 'These coworkers are all shit.' Hands: while grumbling, staying up all night cleaning up the mess after coworkers fail. Mouth: 'This world is shit, let's end it.' Hands: 7 AM the next day, squeezing into shit-like subway, doing shit-like work. Don't worry — that's not the apocalypse siren, that's the charge toward world salvation." },
+  "ZZZZ": { cn: "The Ghost", intro: "I'm not dead, just sleeping.", desc: "Congratulations! You've got the rarest Ghost personality. 99+ messages in the group? Invisible. But when someone posts '@everyone, half hour left before deadline,' you might rise from your thousand-year tomb, slowly type 'got it,' and within 29 minutes submit a barely-passing answer. Yes — until the 'deadline' (the only highest-priority command) appears, you truly explode. Not waking則已, once waking惊人. You've proven a truth to the universe: sometimes doing nothing means not doing anything wrong." },
+  "POOR": { cn: "The Specialist", intro: "I'm poor, but I'm focused.", desc: "Congratulations! You've got the POOR type. This 'poor' isn't a wallet balance verdict — it's resource redistribution after desire minimalism. Others scatter energy like QR codes across the sky; you compress yours into a laser beam. Point it somewhere, and that place starts smoking. POOR's world is simple: everything unimportant gets noise-reduced, important things get done hardcore. Socializing, vanity, seeking attention everywhere? Sorry, no time. You're not resource-poor — you've poured everything into one hole, looking like poverty but actually like a mine shaft." },
+  "MONK": { cn: "The Monk", intro: "I have no worldly desires.", desc: "While others contemplate love and hate in KTVs, MONK chooses to contemplate the great Dao at home. MONK has seen through worldly affairs, doesn't want idle people disturbing their cultivation or breaking their practice. MONK's personal space is their domain, their sacred mountain, their absolute territory — holy and inviolable. Those who enter feel a soul-deep suffocation. MONKs don't cling or attach because in their worldview, everything has its independent orbit. Planets maintain billions of kilometers between each other to form a harmonious universe — why can't people?" },
+  "IMSB": { cn: "The Ambivore", intro: "Seriously? Am I really an idiot?", desc: "Congratulations! You're not even in the human category! You've got the million-year-rare IMSB type. IMSB's brain houses two immortal warriors: 'F*** IT, CHARGE!' and 'I'm a f***ing idiot!' When facing someone they like: first warrior says 'GO! Get their WeChat! Ask them out! Love must be shouted!' Second warrior says 'Why would they like you? You'll just humiliate yourself!' End result: staring at their retreating back, then pulling out phone to search 'how to overcome social anxiety.' IMSB isn't truly stupid — their inner drama is just longer than all Marvel movies combined." },
+  "SOLO": { cn: "The Orphan", intro: "I cried. Why am I an orphan?", desc: "Congratulations! You've got the rarest SOLO type. Don't cry yet — a king's coronation is usually a solo affair anyway. Orphans have low self-worth, so sometimes actively distance themselves. They've built a 'Don't Touch Me' Great Wall around their soul. Every brick is a past wound. Orphan is like a hedgehog hiding all soft spots then facing the world with the hardest spines. Those spikes aren't attacks — they're unspoken words: 'Don't come near, I'm afraid you'll get hurt' and 'Please, don't leave.'" },
+  "FUCK": { cn: "The Wildcard", intro: "What the hell is this personality?", desc: "Congratulations! You're not even in the human category! You've got the million-year-rare FUCK type. In the city of civilization, a Super-Life-Force humanoid weed that no herbicide can kill has appeared — that's the Wildcard. Its scientific name: FUCK. In FUCK's worldview, worldly rules are meaningless. Their emotional switch is a physical toggle: FUCK YEAH and FUCK OFF. FUCK pursues not just instant gratification but a raw生命力 charging through their body. When everyone's been domesticated into docile poultry, FUCK is the last wolf howl on the wild frontier." },
+  "DEAD": { cn: "The Void", intro: "Am I... still alive?", desc: "Congratulations! You've got the rarest type, except 'the Dead' is a bit晦气, so it can also be called: Don't Expect Any Drives. The Void has seen through all meaningless philosophy, appearing to have 'lost' interest in everything. They view the world like a pro gamer who's completed all main quests, side quests, hidden missions, deleted and restarted 999 times — finally discovering: this game is fundamentally uninteresting. The Void is the ultimate sage beyond desires and goals. Their existence is the most silent and thorough protest against this noisy world." },
+  "IMFW": { cn: "The Wiper", intro: "Am I really... a waste?", desc: "Congratulations! You've discovered an extremely rare personality, only 0.0001% of the population — the Wiper. Wipers have fragile self-esteem, lack security, sometimes lack opinions — so they can precisely sense the strongest WiFi signal around them: the person they trust most in their heart. Living with a Wiper is like entering a top orchid greenhouse: needing precise temperature, humidity control, and daily scheduled 'I love you' verbal photosynthesis. Give a Wiper candy, they'll give you a晶晶 trusting look. You're not necessarily a waste — you're just too unguarded, too earnest." },
+  "HHHH": { cn: "The Giggle", intro: " hahahahaha.", desc: "Congratulations! Because your thinking circuits are too unique, the standard personality library has completely crashed. Only when first personality match is below 60% does the system force-match this type — HHHH, the Giggle. What's special about this personality? Hahahahahahahaha! Sorry, that's the entire trait. You can check the 15 dimensions for an unprofessional evaluation — so sorry! The author didn't design for this case. Hahahaha... laughing and crying. How can someone have such novel brain circuits." },
+  "DRUNK": { cn: "The Drunkard", intro: "Baijiu burns the throat. Can't help but get drunk.", desc: "Why do you walk unsteadily? Why are you always emotionally high? Why do you see double? Because what flows through your veins isn't blood — it's delicious Wuliangye! Erguotou! Jiangxiaobai! Oh, every drop burns, every drop boils. Have you gotten used to pouring baijiu into your thermos and drinking it like water? What magnificent baijiu! It makes you chat cheerfully at dinner tables, hug the toilet bowl reflecting on life in the bathroom; makes you feel like a nightclub poet, the universe's unextinguished fire, until 10 AM the next day when your head feels like a cracked walnut, food residue on your lips, soul hiding in the corner. You finally understand — last night's loud-talking, table-slapping person has become a drunkard." }
+};
+
+    // English translations for DIM_EXPLANATIONS
+    const DIM_EXPLANATIONS_EN = {
+  "S1": { L: "You scrutinize yourself even harsher than others — compliment you twice and you'll verify it first.", M: "Confidence fluctuates with weather. Flying with tailwind, retreating in headwind.", H: "You generally know your own worth. Won't be easily shaken by a stranger's comment." },
+  "S2": { L: "Inner channel has lots of snow static. Often stuck in 'Who am I' loop.", M: "Usually recognize yourself, occasionally changed by temporary emotions.", H: "Clear about your temper, desires, and bottom line." },
+  "S3": { L: "More focused on comfort and safety. No need to sprint life every day.", M: "Want to improve, also want to chill. Values often debate internally.", H: "Easily driven by goals, growth, or important beliefs." },
+  "E1": { L: "Relationship alarm is sensitive. Read receipts trigger whole storylines.", M: "Half trust, half suspicion. Often in internal tug-of-war.", H: "More willing to trust the relationship itself. Won't be scared off by small issues." },
+  "E2": { L: "Emotional investment is restrained. Door isn't closed, but the access control is strict.", M: "Invest but keep backup plans. Not going all-in.", H: "Once convinced, easily get serious. Full energy and emotions committed." },
+  "E3": { L: "Easily clingy and like being clung to. Temperature in relationship matters.", M: "Want both intimacy and independence. Adjustable dependency type.", H: "Personal space matters. Even in love, need your own territory." },
+  "A1": { L: "See the world with defensive filter. Suspect first, approach later.", M: "Neither naive nor full conspiracy theorist. Observation is your instinct.", H: "More willing to trust humanity and goodness. Don't rush to condemn the world." },
+  "A2": { L: "Bend rules when possible. Comfort and freedom often come first.", M: "Follow rules when needed, flexible when appropriate.", H: "Strong sense of order. Prefer routine over improvising." },
+  "A3": { L: "Low sense of meaning. Often feel things are just going through motions.", M: "Sometimes have goals, sometimes want to slack. Life outlook is half-booted.", H: "Act with more direction. Generally know which way to go." },
+  "Ac1": { L: "Consider not messing up first. Risk-avoidance activates before ambition.", M: "Sometimes want to win, sometimes just want to avoid trouble. Mixed motivations.", H: "More easily ignited by results, growth, and progress." },
+  "Ac2": { L: "Make decisions after many internal rounds. Brain meetings often overtime.", M: "Think, but not to the point of crashing. Normal hesitation.", H: "Quick to decide. Once decided, don't like rehashing." },
+  "Ac3": { L: "Execution has deep love affair with deadlines. The later, the more you awaken.", M: "Can do it, but state depends on timing. Sometimes steady, sometimes lazy.", H: "Strong drive to push forward. Unfinished things feel like thorns." },
+  "So1": { L: "Social initiation is slow. Need to gather courage to take initiative.", M: "Accept people if they come, don't force if not. Average social flexibility.", H: "More willing to open the stage actively. Not afraid to stand out in crowds." },
+  "So2": { L: "In relationships, prefer closeness and fusion. Easily categorize people into inner circle.", M: "Want closeness but also gaps. Boundary sense adjusts by person.", H: "Strong boundary sense. Instinctively step back when people get too close." },
+  "So3": { L: "More direct expression. Rarely beat around the bush.", M: "Read the room. Balance authenticity with tact.", H: "Skilled at self-switching for different scenes. Authenticity distributed in layers." }
+};
 
     const app = {
       shuffledQuestions: [],
@@ -1597,7 +1665,7 @@
 
     function getQuestionMetaLabel(q) {
       if (q.special) return i18n[currentLang].specialQuestion;
-      return app.previewMode ? dimensionMeta[q.dim].name : i18n[currentLang].hiddenDim;
+      return app.previewMode ? dimensionMeta[q.dim].name[currentLang] : i18n[currentLang].hiddenDim;
     }
 
     function renderQuestions() {
@@ -1608,21 +1676,23 @@
         const card = document.createElement('article');
         card.className = 'question';
         const qNum = currentLang === 'zh' ? `第 ${index + 1} 题` : `Q${index + 1}`;
+        const questionText = typeof q.text === 'object' ? q.text[currentLang] : q.text;
         card.innerHTML = `
           <div class="question-meta">
             <div class="badge">${qNum}</div>
             <div>${getQuestionMetaLabel(q)}</div>
           </div>
-          <div class="question-title">${q.text}</div>
+          <div class="question-title">${questionText}</div>
           <div class="options">
             ${q.options.map((opt, i) => {
               const code = ['A', 'B', 'C', 'D'][i] || String(i + 1);
               const checked = app.answers[q.id] === opt.value ? 'checked' : '';
+              const label = typeof opt.label === 'object' ? opt.label[currentLang] : opt.label;
               return `
                 <label class="option">
                   <input type="radio" name="${q.id}" value="${opt.value}" ${checked} />
                   <div class="option-code">${code}</div>
-                  <div>${opt.label}</div>
+                  <div>${label}</div>
                 </label>
               `;
             }).join('')}
@@ -1717,24 +1787,24 @@
       const drunkTriggered = getDrunkTriggered();
 
       let finalType;
-      let modeKicker = '你的主类型';
-      let badge = `匹配度 ${bestNormal.similarity}% · 精准命中 ${bestNormal.exact}/15 维`;
-      let sub = '维度命中度较高，当前结果可视为你的第一人格画像。';
+      let modeKickerKey = 'resultModeKickerDefault';
+      let badgeKey = 'matchBadgeDefault';
+      let subKey = 'typeSubDefault';
       let special = false;
       let secondaryType = null;
 
       if (drunkTriggered) {
         finalType = TYPE_LIBRARY.DRUNK;
         secondaryType = bestNormal;
-        modeKicker = '隐藏人格已激活';
-        badge = '匹配度 100% · 酒精异常因子已接管';
-        sub = '乙醇亲和性过强，系统已直接跳过常规人格审判。';
+        modeKickerKey = 'resultModeKickerDrunk';
+        badgeKey = 'matchBadgeDrunk';
+        subKey = 'subDrunk';
         special = true;
       } else if (bestNormal.similarity < 60) {
         finalType = TYPE_LIBRARY.HHHH;
-        modeKicker = '系统强制兜底';
-        badge = `标准人格库最高匹配仅 ${bestNormal.similarity}%`;
-        sub = '标准人格库对你的脑回路集体罢工了，于是系统把你强制分配给了 HHHH。';
+        modeKickerKey = 'resultModeKickerHHHH';
+        badgeKey = 'matchBadgeHHHH';
+        subKey = 'subHHHH';
         special = true;
       } else {
         finalType = bestNormal;
@@ -1746,9 +1816,11 @@
         ranked,
         bestNormal,
         finalType,
-        modeKicker,
-        badge,
-        sub,
+        modeKickerKey,
+        badgeKey,
+        similarity: bestNormal.similarity,
+        exact: bestNormal.exact,
+        subKey,
         special,
         secondaryType
       };
@@ -1756,14 +1828,16 @@
 
     function renderDimList(result) {
       const dimList = document.getElementById('dimList');
+      const explanations = currentLang === 'en' ? DIM_EXPLANATIONS_EN : DIM_EXPLANATIONS;
+      const scoreLabel = currentLang === 'en' ? 'pts' : '分';
       dimList.innerHTML = dimensionOrder.map(dim => {
         const level = result.levels[dim];
-        const explanation = DIM_EXPLANATIONS[dim][level];
+        const explanation = explanations[dim][level];
         return `
           <div class="dim-item">
             <div class="dim-item-top">
-              <div class="dim-item-name">${dimensionMeta[dim].name}</div>
-              <div class="dim-item-score">${level} / ${result.rawScores[dim]}分</div>
+              <div class="dim-item-name">${dimensionMeta[dim].name[currentLang]}</div>
+              <div class="dim-item-score">${level} / ${result.rawScores[dim]}${scoreLabel}</div>
             </div>
             <p>${explanation}</p>
           </div>
@@ -1775,13 +1849,26 @@
       const result = computeResult();
       const type = result.finalType;
       const t = i18n[currentLang];
+      const typeData = currentLang === 'en' && TYPE_LIBRARY_EN[type.code] ? TYPE_LIBRARY_EN[type.code] : type;
+      const cnName = typeData.cn;
+      const typeDesc = typeData.desc || type.desc;
+      const typeIntro = typeData.intro || type.intro;
 
-      document.getElementById('resultModeKicker').textContent = result.modeKicker;
-      document.getElementById('resultTypeName').textContent = `${type.code}（${type.cn}）`;
-      document.getElementById('matchBadge').textContent = result.badge;
-      document.getElementById('resultTypeSub').textContent = result.sub;
-      document.getElementById('resultDesc').textContent = type.desc;
-      document.getElementById('posterCaption').textContent = type.intro;
+      // Build badge and sub from keys or defaults
+      const badgeText = result.badgeKey === 'matchBadgeDefault'
+        ? `${t.matchBadge}${result.similarity}% ${t.dimPrecision}${result.exact}/15${t.dimSuffix}`
+        : result.badgeKey === 'matchBadgeHHHH'
+        ? `${t.matchBadgeHHHH}${result.similarity}%`
+        : t[result.badgeKey] || t.matchBadgeDefault;
+      const subText = t[result.subKey] || t.typeSubDefault;
+      const modeKickerText = t[result.modeKickerKey] || t.resultModeKickerDefault;
+
+      document.getElementById('resultModeKicker').textContent = modeKickerText;
+      document.getElementById('resultTypeName').textContent = `${type.code}（${cnName}）`;
+      document.getElementById('matchBadge').textContent = badgeText;
+      document.getElementById('resultTypeSub').textContent = subText;
+      document.getElementById('resultDesc').textContent = typeDesc;
+      document.getElementById('posterCaption').textContent = typeIntro;
       document.getElementById('funNote').textContent = result.special ? t.funNoteSpecial : t.funNoteNormal;
 
       document.querySelector('.analysis-box h3').textContent = t.analysisTitle;
@@ -1805,7 +1892,7 @@
       const imageSrc = TYPE_IMAGES[type.code];
       if (imageSrc) {
         posterImage.src = imageSrc;
-        posterImage.alt = `${type.code}（${type.cn}）`;
+        posterImage.alt = `${type.code}（${cnName}）`;
         posterBox.classList.remove('no-image');
       } else {
         posterImage.removeAttribute('src');

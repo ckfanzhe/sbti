@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test_i18n.py)",
+      "Bash(pip install:*)",
+      "Bash(playwright install:*)"
+    ]
+  }
+}
