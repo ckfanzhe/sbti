@@ -26,6 +26,7 @@ SBTI (**Silly Big Personality Test**) is the anti-MBTI. No four-letter codes, no
 - **15 Dimensions** — S1 to So3, measuring everything from self-esteem to social awkwardness
 - **Hidden Types** — Answer certain questions wrong and unlock the legendary DRUNK type
 - **Shitpost-Grade Accuracy** — May or may not reflect actual personality
+- **Multi-Language Support** — 中文 / English fully supported, with 日本語 and 한국어 planned
 
 ---
 
